@@ -99,7 +99,7 @@ const SignUpForm = () => {
                     value={confirmPassword} 
                 />
 
-                <Button buttonType='google' type="submit">Submit</Button>
+                <Button buttonType='inverted' type="submit">Submit</Button>
             </form>
         </div>
     )
