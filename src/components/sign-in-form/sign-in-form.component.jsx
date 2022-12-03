@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import { signInAuthUserWithEmailAndPassword, signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils'
 
@@ -51,14 +51,6 @@ const SignInForm = () => {
                     console.log(error);
             }
         }
-        // const auth = authorization;
-
-        // response.exists();
-
-        // confirm passwords match
-        // see if we authenticated user with email and password
-        // create user document
-        // pass displayName when you generate document from what you get back from authuserback
     }
 
     return (
@@ -84,8 +76,12 @@ const SignInForm = () => {
                     value={password} 
                 />
                 <div className="buttons-container">
-                    <Button buttonType='inverted' type="submit">Sign In</Button>
-                    <Button onClick={signInWithGoogle} buttonType='google' type='button'>Sign In</Button>
+                    <Button type="button">Sign In</Button>
+                    <Button 
+                        onClick={signInWithGoogle} 
+                        buttonType={BUTTON_TYPE_CLASSES.google} 
+                        type='button'>Sign In With Google
+                    </Button>
                 </div>
             </form>
         </div>
