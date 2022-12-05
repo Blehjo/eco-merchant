@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Eco Merchant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ![Shell Geist's logo](./src/assets/crown.svg)
+  
+  ![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)
+  
+  Eco Merchant is an ecommerce web application. Similar to your favorite clothing store's website. You can browse clothing, add them to your cart, and purchase them if you would like. Navigate through the site seamlessly and even sign up, so that you can receive updates as the catalogue get's updated from season to season.
 
-## Available Scripts
+  [React](https://reactjs.org/), [Node.js](https://nodejs.org/en/), [Sass](https://sass-lang.com/), [Redux](https://redux.js.org/) and [Firebase](https://firebase.google.com/) were used to create this application.
 
-In the project directory, you can run:
+ The deployed site can be found [here](https://exquisite-basbousa-208df9.netlify.app/).
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  &nbsp;
+  # Table of Contents:
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Future Developments](#future)
+  * [Questions](#questions)
+  
+---
+&nbsp;
+  ## Installation:
+The application is deployed [here](https://exquisite-basbousa-208df9.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
+  However, if you would like to clone to your local machine:
+  &nbsp;
+  1. `git clone` this repository or fork it over
+  2. In the project's terminal, run `yarn` to install the dependencies
+  3. To run the application, run `yarn start` in both repositories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+&nbsp;
+> Landing Page
+![Cart Interface](./.github/images/homepage.png) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+&nbsp;
+> Shop Page
+![Cart Interface](./.github/images/shoppage.png) 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+&nbsp;
+> Cart Interface
+![Cart Interface](./.github/images/carticonpage.png) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+&nbsp;
+> Cart Page
+![Cart Page](./.github/images/cartpage.png) 
 
-### `yarn eject`
+&nbsp;
+> Category Page
+![Category Page](./.github/images/categorypage.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+&nbsp;
+> Log in & Sign Up
+![Log in](./.github/images/carticonpage.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+&nbsp;
+  ## Future:
+In a future development, Eco Merchant:
+  
+  * Will use AWS to store photos
+  * Will allow users to upload their photos of the clothing
+  * Will include a comment section for reviews
+  * Offer suggestions for outfits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  &nbsp;
+  ## Questions:
+  If you need any further assistance, the contact information of the group members is below. Additionally, you may email gheistshell@gmail.com or visit us on Discord [Cuf](https://discord.gg/sKywbh5R)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  #### Bleh Seton: 
+  * Github: [blehjo](https://github.com/Blehjo)
