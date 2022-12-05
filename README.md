@@ -52,10 +52,6 @@ The application is deployed [here](https://exquisite-basbousa-208df9.netlify.app
 ![Category Page](./.github/images/categorypage.png)
 
 &nbsp;
-> Cart Icon
-![Cart Icon](./.github/images/carticonpage.png)
-
-&nbsp;
 > Sign In Page
 ![Log in](./.github/images/signinpage.png)
 
