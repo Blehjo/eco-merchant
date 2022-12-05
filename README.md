@@ -57,7 +57,7 @@ The application is deployed [here](https://exquisite-basbousa-208df9.netlify.app
 
 &nbsp;
 > Sign In Page
-![Log in](./.github/images/signinPage.png)
+![Log in](./.github/images/signinpage.png)
 
 &nbsp;
   ## Future:
