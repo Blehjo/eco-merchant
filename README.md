@@ -66,7 +66,7 @@ In a future development, Eco Merchant:
 
   &nbsp;
   ## Questions:
-  If you need any further assistance, the contact information of the group members is below. Additionally, you may email gheistshell@gmail.com or visit us on Discord [Cuf](https://discord.gg/sKywbh5R)
+  If you need any further assistance, the contact information of the group members is below. Additionally, you may email blehjooo@gmail.com.
 
   #### Bleh Seton: 
   * Github: [blehjo](https://github.com/Blehjo)
