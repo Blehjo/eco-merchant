@@ -6,6 +6,7 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import './sign-in-form.styles.scss'
 import { googleSignInStart, emailSignInStart } from "../../store/user/user.action";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const defaultFormFields = {
     email: '',
@@ -13,6 +14,7 @@ const defaultFormFields = {
 }
 
 const SignInForm = () => {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { email, password } = formFields;
@@ -37,6 +39,8 @@ const SignInForm = () => {
         try {
             dispatch(emailSignInStart(email, password));
             resetFormFields();
+            navigate('/');
+
         } catch(error) {
             switch (error.code) {
                 case 'auth/wrong-password':
