@@ -5,9 +5,12 @@ import Button from "../button/button.component"
 
 import { 
     createAuthUserWithEmailAndPassword, 
+    createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
 
 import './sign-up-form.styles.scss'
+import { useDispatch } from "react-redux";
+import { signUpStart } from '../../store/user/user.action';
 
 const defaultFormFields = {
     displayName: '',
@@ -19,49 +22,36 @@ const defaultFormFields = {
 const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
+    const dispatch = useDispatch();
 
-    const resetForm = () => {
-        setFormFields();
+    const resetFormFields = () => {
+        setFormFields(defaultFormFields);
     }
-
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-
-        setFormFields({ ...formFields, [name]: value })
-    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+    
         if (password !== confirmPassword) {
-            alert('error message');
-            return;
+          alert('passwords do not match');
+          return;
         }
-
+    
         try {
-            const { user } = await createAuthUserWithEmailAndPassword(
-                email, 
-                password
-            );
-
-            await createAuthUserWithEmailAndPassword(user, { displayName });
-            resetForm();
-
-        } catch(error) {
-            if (error.code === 'auth/email-already-in-use') {
-                alert('Cannot create user, email already in use');
-            } else {
-                console.log('user creation encountered an error', error);
-            }
+          dispatch(signUpStart(email, password, displayName));
+          resetFormFields();
+        } catch (error) {
+          if (error.code === 'auth/email-already-in-use') {
+            alert('Cannot create user, email already in use');
+          } else {
+            console.log('user creation encountered an error', error);
+          }
         }
-        // const auth = authorization;
-
-        // response.exists();
-
-        // confirm passwords match
-        // see if we authenticated user with email and password
-        // create user document
-        // pass displayName when you generate document from what you get back from authuserback
-    }
+      };
+    
+      const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormFields({ ...formFields, [name]: value });
+      };
 
     return (
         <div className="sign-up-container">
